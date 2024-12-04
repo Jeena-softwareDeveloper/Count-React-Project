@@ -1,0 +1,47 @@
+/* Galaxy Theme Styling */
+
+/* General Layout */
+.container {
+  @apply flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-purple-900 via-indigo-800 to-blue-900 p-4;
+}
+
+.heading {
+  @apply text-4xl font-extrabold text-white mb-6 text-shadow-lg;
+}
+
+.value-display {
+  @apply text-2xl text-white mb-8 text-shadow-lg;
+}
+
+/* Buttons Container */
+.buttons-container {
+  @apply flex space-x-6 mt-6;
+}
+
+/* Button Specific Styling */
+button {
+  @apply px-6 py-3 rounded-lg text-white font-semibold transition duration-300 ease-in-out shadow-xl;
+}
+
+/* Button Hover Effects */
+button:hover {
+  @apply opacity-90;
+}
+
+/* Individual Button Styling */
+button:nth-of-type(1) {
+  @apply bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-600;
+}
+
+button:nth-of-type(2) {
+  @apply bg-gradient-to-r from-red-600 to-orange-500 hover:bg-gradient-to-r hover:from-red-700 hover:to-orange-600;
+}
+
+button:nth-of-type(3) {
+  @apply bg-gradient-to-r from-gray-700 to-black hover:bg-gradient-to-r hover:from-gray-800 hover:to-black;
+}
+
+/* Add a glowing effect on text */
+.text-shadow-lg {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4);
+}
